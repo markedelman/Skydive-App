@@ -50,14 +50,37 @@
 
 /* Mobile defaults */
 
-.col-3, .col-4, .col-6, .col-12 {
-    width: 100%;
+/*Mbile//
+max-width:680px
+
+tablet//
+min-width:700px;
+max-width:
+
+computer
+min-width:1200px;
+max-width:1600px;
+
+widescreen
+min-width:1600px;*/
+/* Non-mobile, grid */
+@media screen and (min-width: 980px) /* Desktop */ {
+  .col-6 {
+   width: 50%;
+ }
 }
 
+@media screen  and (max-width: 979px) /* Tablet */ {
+  .col-6 {
+   width: 100%;
+}
+}
 
-/* Non-mobile, grid */
-
-@media only screen and (min-width: 640px) {
+@media screen and (max-width: 500px) /* Mobile */ {
+  .col-6 {
+   width: 100%;
+ }
+}
     /* 3 columns, 3/12 in % */
     .col-3 {
         width: 25%;
@@ -67,11 +90,7 @@
         width: 33.33%;
     }
     /* 6 columns 6/12 in % */
-    .col-6 {
-        width: 50%;
-    }
     /* 12 columns, 12/12 */
     .col-12 {
-        width: 100%; 
+        width: 100%;
     }
-}

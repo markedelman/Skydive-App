@@ -1,4 +1,10 @@
- main {
+body {
+    background-image: url("http://wallpapersdsc.net/wp-content/uploads/2016/10/Sky-Photos.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+main {
     padding-top: 100px;
 }
 
@@ -11,6 +17,65 @@ main .row {
     text-align: center;
     padding-top: 30px;
 }
+
+.col-6, .col-12 {
+    border: solid black 2px;
+}
+
+.welcome-text {
+    font-size: 235%;
+    color: yellow;
+    margin-top: 1%;
+}
+
+.directions-text {
+    font-size: 120%;
+    color: yellow;
+    margin-top: 14%;
+}
+
+.js-query-city {
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: 3px solid grey;
+    margin: 6%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+.js-query-state {
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    border: 3px solid grey;
+    margin: 6%;
+    background: rgba(0, 0, 0, 0.3);
+    color: #fff;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+button {
+    height: 50px;
+    height: 50px;
+    font-size: 25px;
+    border-radius: 3px;
+    background-color: #00FF00;
+    border: 2px solid black;
+}
+button:hover{
+  background-color: #FFFF00;
+}
+button:active{
+  background-color: blue;
+}
+
+label {
+    font-size: 140%;
+    color: yellow;
+}
+
 
 /*.black {
     background-color: black;

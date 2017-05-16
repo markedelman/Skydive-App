@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+<!--  lang="en" -->
 
 <head>
-    <meta charset="UTF-8">
-    <title>CSS Responsive Grid Challenge</title>
+    <!-- <meta charset="UTF-8"> -->
+    <title>Skydive App</title>
 
     <!-- Responsive viewport tag, tells small screens that it's responsive -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Stylesheets -->
     <link rel="stylesheet" href="styles/float-grid.css" />
     <link rel="stylesheet" href="styles/main.css" />
+
+
 </head>
 
 <body>
@@ -18,15 +20,24 @@
         <div class="row">
             <div class="col-12">
                 <div class="box js-welcome">
-                    <span>Welcome to the Skydive App :)</span>
-                    <span>Please enter your city and select your state below</span>
+                    <p class="welcome-text">Welcome to the Skydive App :)</p>
+                    <p class="directions-text">Please enter your city and select your state below</p>
                 </div>
             </div>
-            <div class="col-12">
-                <div class="box form">
-                    <form class="js-search-form">
+        </div>
+        <div class="row">
+            <div class="col-6">
+                <div class="box js-city-input form">
+                    <form class="js-city">
                         <label for="entry">City</label>
                         <input class="js-query-city" type="text" placeholder="Harrisburgh">
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-6">
+                <div class="box js-state-input form">
+                    <form class="js-state">
                         <label for="entry">State</label>
                         <select class="js-query-state">
 					        <option value="AL">Alabama</option>
@@ -81,16 +92,29 @@
 					        <option value="WI">Wisconsin</option>
 					        <option value="WY">Wyoming</option>
 			            </select>
-                        <button type="submit">Search</button>
                     </form>
                 </div>
             </div>
+        </div>
+        <div class="row">
             <div class="col-12">
-                <div class="box js-results"></div>
+                <div class="box js-button">
+                    <button type="submit" class="button">Search</button>
+                </div>
             </div>
         </div>
+        <!-- <div class="col-12"> -->
+        <div class="js-results"></div>
+        <!-- </div> -->
+
+
+        <!-- </div> -->
 
     </main>
+
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
 </body>
 
 </html>
