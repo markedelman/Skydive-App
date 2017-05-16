@@ -18,9 +18,9 @@ main .row {
     padding-top: 30px;
 }
 
-.col-6, .col-12 {
+/*.col-6, .col-12 {
     border: solid black 2px;
-}
+}*/
 
 .welcome-text {
     font-size: 235%;

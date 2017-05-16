@@ -14,7 +14,8 @@
  *   For smaller screens, we always want 20px of padding on either side,
  *   so 960 + 20 + 20 => 1000px
  *
- **/
+ *
+ */
 
 .row {
     max-width: 1000px;
