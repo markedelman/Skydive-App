@@ -1,7 +1,7 @@
  // AJAX request
  const getDataFromApi = (searchTermCity, searchTermState, callback) => {
      let settings = {
-         url: `http://api.wunderground.com/api/0bb3c0d8c3ed1468/conditions/q/${searchTermState}/${searchTermCity}.json`,
+         url: `https://api.wunderground.com/api/0bb3c0d8c3ed1468/conditions/q/${searchTermState}/${searchTermCity}.json`,
          format: 'json',
          type: 'GET',
          success: callback
